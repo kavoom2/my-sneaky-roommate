@@ -23,10 +23,10 @@ namespace LittleDinoLini
 
         [Header("Settings")]
         [SerializeField]
-        float _moveSpeed = 6f;
+        float _moveSpeed = 300f;
 
         [SerializeField]
-        float _rotationSpeed = 15f;
+        float _rotationSpeed = 450f;
 
         [SerializeField]
         float _smoothTime = 0.2f;

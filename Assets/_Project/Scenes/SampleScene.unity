@@ -242,7 +242,7 @@ MonoBehaviour:
   _freeLookCamera: {fileID: 347781433}
   _input: {fileID: 11400000, guid: 269dbccb76260423e928766339d2e452, type: 2}
   _moveSpeed: 300
-  _rotationSpeed: 15
+  _rotationSpeed: 450
   _smoothTime: 0.2
 --- !u!54 &190139958
 Rigidbody:
