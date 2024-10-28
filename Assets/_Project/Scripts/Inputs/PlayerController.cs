@@ -128,18 +128,12 @@ namespace LittleDinoLini
             // 조정된 방향을 기준으로 회전을 계산합니다.
             var targetRotation = Quaternion.LookRotation(adjustedDirection);
 
-            Debug.Log($"targetRotation: {targetRotation}");
-            Debug.Log($"transform.rotation: {transform.rotation}");
-
             // 현재 회전에서 목표 회전으로 부드럽게 회전합니다.
             transform.rotation = Quaternion.RotateTowards(
                 transform.rotation,
                 targetRotation,
                 _rotationSpeed * Time.deltaTime
             );
-
-            // 캐릭터가 조정된 방향을 바라보도록 설정합니다.
-            // transform.LookAt(transform.position + adjustedDirection);
         }
 
         /// <summary>
