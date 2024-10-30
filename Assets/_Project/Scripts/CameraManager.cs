@@ -38,8 +38,6 @@ namespace LittleDinoLini
             _input.DisableMouseControlCamera -= OnDisableMouseControlCamera;
         }
 
-        void Start() => _input.EnablePlayerActions();
-
         void OnLook(Vector2 cameraMovement, bool isDeviceMouse)
         {
             if (_cameraMovementLock)

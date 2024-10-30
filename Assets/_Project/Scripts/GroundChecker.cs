@@ -1,21 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using KBCore.Refs;
 using UnityEngine;
 
 namespace LittleDinoLini
 {
     public class GroundChecker : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
+        [SerializeField]
+        float _groundDistance = 0.08f;
 
-        // Update is called once per frame
+        [SerializeField]
+        LayerMask _groundLayers;
+
+        public bool IsGrounded { get; private set; }
+
         void Update()
         {
-        
+            IsGrounded = Physics.SphereCast(
+                transform.position,
+                _groundDistance,
+                Vector3.down,
+                out _,
+                _groundDistance,
+                _groundLayers
+            );
         }
     }
 }
