@@ -8,7 +8,7 @@ using static PlayerInputActions;
 
 namespace LittleDinoLini
 {
-    [CreateAssetMenu(menuName = "LittleDinoLini/Input/InputReader", fileName = "InputReader")]
+    [CreateAssetMenu(menuName = "LittleDinoLini/InputReader", fileName = "InputReader")]
     public class InputReader : ScriptableObject, IPlayerActions
     {
         public event UnityAction<Vector2> Move = delegate { };
